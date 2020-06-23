@@ -48,7 +48,7 @@ function computeEffectiveness(umimgw) {
 
   let effectiveness = [
     { status: "TAK", num: yes },
-    { status: "NIE", num: yes },
+    { status: "NIE", num: no },
     { status: "FAŁSZYWE TAK", num: false_yes },
     { status: "FAŁSZYWE NIE", num: false_no },
   ];
@@ -85,3 +85,6 @@ var umimgw = [
 ];
 
 computeEffectiveness(umimgw);
+
+//separateDobaPeriod
+//Math.floor((r.forecast_duration - 6) / 24)
